@@ -1,0 +1,232 @@
+#name {
+    width: 100%; /* Makes the input take the full width of the parent container */
+    padding: 10px 6px; /* Increase padding for a larger input */
+    font-size: 16px; /* Bigger text */
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+    outline: none; /* Removes the default focus outline */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+/* Focus effect on the input field */
+#name:focus {
+    border-color: #66bb6a; /* Lighter green when focused */
+    box-shadow: 0 0 5px rgba(102, 187, 106, 0.8); /* Add a light green glow effect */
+}
+
+/* Optional: Styling for the input field when hovered */
+#name:hover {
+    background-color: #e0e0e0; /* Darker gray background on hover */
+}
+#boolean {
+    width: 100%; /* Makes the input take the full width of the parent container */
+    padding: 10px 6px; /* Increase padding for a larger input */
+    font-size: 20px; /* Bigger text */
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+    outline: none; /* Removes the default focus outline */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+/* Focus effect on the input field */
+#boolean:focus {
+    border-color: #66bb6a; /* Lighter green when focused */
+    box-shadow: 0 0 5px rgba(102, 187, 106, 0.8); /* Add a light green glow effect */
+}
+
+/* Optional: Styling for the input field when hovered */
+#boolean:hover {
+    background-color: #e0e0e0; /* Darker gray background on hover */
+}
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Blue color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    border: 2px solid transparent;
+}
+
+.back-btn:hover {
+    background-color: #0056b3; /* Darker blue */
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-color: #0056b3;
+}
+
+.back-btn:focus {
+    outline: none; /* Remove focus border */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- input create design ----------------*/
+
+.submit-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 12px 25px; /* Increase padding for larger button */
+    font-size: 16px; /* Larger text */
+    font-weight: bold; /* Bold text */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    width: 100%; /* Make the button stretch the width of its parent */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.2s ease; /* Smooth transition for background and hover effects */
+}
+
+/* Hover effect for the submit button */
+.submit-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Focus effect */
+.submit-btn:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.8); /* Add a green glow effect */
+}
+
+/* Disabled button (optional) */
+.submit-btn:disabled {
+    background-color: #cccccc; /* Light gray background */
+    cursor: not-allowed; /* Change cursor to not-allowed */
+}
+
+
+/* --------------- input filer design ----------------*/
+
+.filter-input{
+    background-color: #c6d821; /* Green background */
+    color: white; /* White text */
+    padding: 6px 8px; /* Increase padding for larger button */
+    font-size: 16px; /* Larger text */
+    font-weight: bold; /* Bold text */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    width: 100%; /* Make the button stretch the width of its parent */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.2s ease; /* Smooth transition for background and hover effects */
+}
+
+/* Hover effect for the submit button */
+.filter-input:hover {
+    background-color: #a09a45; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Focus effect */
+.filter-input:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 5px rgba(138, 119, 16, 0.8); /* Add a green glow effect */
+}
+
+/* Disabled button (optional) */
+.filter-input:disabled {
+    background-color: #cccccc; /* Light gray background */
+    cursor: not-allowed; /* Change cursor to not-allowed */
+}
+
+
+
+/*  -------------edit button ----------------- */
+    /* Styling for the edit button */
+    .edit-btn {
+        background-color: #007bff; /* Blue background */
+        color: white; /* White text */
+        padding: 10px 20px; /* Padding for larger button */
+        font-size: 14px; /* Font size */
+        font-weight: bold; /* Bold text */
+        border: none; /* Remove default border */
+        border-radius: 5px; /* Slightly rounded corners */
+        display: inline-flex; /* Inline layout to align icon and text */
+        align-items: center; /* Vertically center icon and text */
+        gap: 8px; /* Space between icon and text */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s, transform 0.2s ease; /* Smooth transitions for hover effects */
+    }
+
+    /* Hover effect for edit button */
+    .edit-btn:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+        transform: scale(1.05); /* Slightly enlarge button on hover */
+    }
+
+    /* Focus effect */
+    .edit-btn:focus {
+        outline: none; /* Remove outline */
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.8); /* Add a blue glow effect */
+    }
+
+    /* Active effect */
+    .edit-btn:active {
+        background-color: #004085; /* Even darker blue when active */
+        transform: scale(0.95); /* Slightly shrink button when clicked */
+    }
+
+
+
+
+    /*  -------------delete button ----------------- */
+    /* Styling for the delete button */
+    .delete-btn {
+        background-color: #eb1708; /* Blue background */
+        color: white; /* White text */
+        padding: 10px 20px; /* Padding for larger button */
+        font-size: 14px; /* Font size */
+        font-weight: bold; /* Bold text */
+        border: none; /* Remove default border */
+        border-radius: 5px; /* Slightly rounded corners */
+        display: inline-flex; /* Inline layout to align icon and text */
+        align-items: center; /* Vertically center icon and text */
+        gap: 8px; /* Space between icon and text */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s, transform 0.2s ease; /* Smooth transitions for hover effects */
+    }
+
+    /* Hover effect for edit button */
+    .delete-btn:hover {
+        background-color: #cc1b1b; /* Darker blue on hover */
+        transform: scale(1.05); /* Slightly enlarge button on hover */
+    }
+
+    /* Focus effect */
+    .delete-btn:focus {
+        outline: none; /* Remove outline */
+        box-shadow: 0 0 5px rgba(204, 85, 38, 0.8); /* Add a blue glow effect */
+    }
+
+    /* Active effect */
+    .delete-btn:active {
+        background-color: #e60901; /* Even darker blue when active */
+        transform: scale(0.95); /* Slightly shrink button when clicked */
+    }
+
+

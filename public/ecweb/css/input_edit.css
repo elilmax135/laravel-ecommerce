@@ -1,0 +1,81 @@
+
+/*  --------------------------- update --------------------*/
+#edit-name {
+    width: 100%; /* Makes the input take the full width of the parent container */
+    padding: 10px 6px; /* Increase padding for a larger input */
+    font-size: 16px; /* Bigger text */
+    border: 2px solid #4c53af; /* Green border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+    outline: none; /* Removes the default focus outline */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+/* Focus effect on the input field */
+#edit-name:focus {
+    border-color: #284775; /* Lighter green when focused */
+    box-shadow: 0 0 5px rgba(65, 146, 221, 0.8); /* Add a light green glow effect */
+}
+
+/* Optional: Styling for the input field when hovered */
+#edit-name:hover {
+    background-color: #e0e0e0; /* Darker gray background on hover */
+}
+#edit-status {
+    width: 100%; /* Makes the input take the full width of the parent container */
+    padding: 10px 6px; /* Increase padding for a larger input */
+    font-size: 20px; /* Bigger text */
+    border: 2px solid #2421e2; /* Green border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333; /* Dark text color */
+    outline: none; /* Removes the default focus outline */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+/* Focus effect on the input field */
+#edit-status:focus {
+    border-color: #69968aa4; /* Lighter green when focused */
+    box-shadow: 0 0 5px rgba(156, 214, 214, 0.8); /* Add a light green glow effect */
+}
+
+/* Optional: Styling for the input field when hovered */
+#edit-status:hover {
+    background-color: #e0e0e0; /* Darker gray background on hover */
+}
+
+
+.submit-btn {
+    background-color: #256169; /* Green background */
+    color: white; /* White text */
+    padding: 12px 25px; /* Increase padding for larger button */
+    font-size: 16px; /* Larger text */
+    font-weight: bold; /* Bold text */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    width: 100%; /* Make the button stretch the width of its parent */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, transform 0.2s ease; /* Smooth transition for background and hover effects */
+}
+
+/* Hover effect for the submit button */
+.submit-btn:hover {
+    background-color: #889eda; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Focus effect */
+.submit-btn:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 5px rgba(109, 194, 219, 0.8); /* Add a green glow effect */
+}
+
+/* Disabled button (optional) */
+.submit-btn:disabled {
+    background-color: #cccccc; /* Light gray background */
+    cursor: not-allowed; /* Change cursor to not-allowed */
+}
+
+
+
