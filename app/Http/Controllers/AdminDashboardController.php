@@ -5,7 +5,9 @@ use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
-
+use App\Models\Category;
+use App\Models\product;
+use App\Models\User;
 use Illuminate\View\View;
 
 
@@ -18,9 +20,13 @@ class AdminDashboardController extends Controller
      */
     public function index()
     {
-        return view('admindashboard.index');
-    }
+        $categoryCount = Category::count(); // Count the number of categories
+        $productCount = Product::count(); // Count the number of products
+        $userCount = User::count(); // Count the number of users
 
+        // Pass the counts to the view
+        return view('admindashboard.index', compact('categoryCount', 'productCount', 'userCount'));
+    }
     /**
      * Show the form for creating a new resource.
      *

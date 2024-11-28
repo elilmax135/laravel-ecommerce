@@ -12,7 +12,7 @@
     <h3>PRODUCTS</h3>
     <span class="material-icons-outlined">inventory_2</span>
 </div>
-<h1>249</h1>
+<h1>{{ $productCount }}</h1>
 </div>
 
 <div class="card">
@@ -20,7 +20,7 @@
     <h3>CATERGORIES</h3>
     <span class="material-icons-outlined">category</span>
 </div>
-<h1>25</h1>
+<h1>{{ $categoryCount }}</h1>
 </div>
 
 <div class="card">
@@ -28,31 +28,45 @@
     <h3>CUSTOMERS</h3>
     <span class="material-icons-outlined">group </span>
 </div>
-<h1>1500</h1>
+<h1>{{ $userCount }}</h1>
 </div>
 
 <div class="card">
 <div class="card-inner">
     <h3>ALERTS</h3>
     <span class="material-icons-outlined"> notification_important</span>
-<h1>56</h1>
+<h1>0</h1>
 </div>
+
 </div>
- <div class="charts">
-    <div class="charts-card">
-        <h2 class="chart-title">Top 5 Products </h2>
-   <div id="bar-chart"></div>
+<div class="notepad-container">
+    <h3>NOTES</h3>
+    <span class="material-icons-outlined">note</span>
+
+    <!-- Simple Notepad -->
+    <textarea id="notepad" placeholder="Write your notes here..." rows="10" cols="30"></textarea>
+
+    <button onclick="saveNote()" class="back-btn">Save Note</button>
 </div>
 
 
 
-   <div class="charts-card">
-    <h2 class="chart-title">Purchase and sales Orders </h2>
-   <div id="area-chart"></div>
 </div>
+<script>
+    // Function to save the note to local storage
+    function saveNote() {
+        const noteContent = document.getElementById('notepad').value;
+        localStorage.setItem('userNote', noteContent);
+        alert('Note saved successfully!');
+    }
 
-
-</div>
-</div>
+    // Load the saved note when the page loads
+    window.onload = function() {
+        const savedNote = localStorage.getItem('userNote');
+        if (savedNote) {
+            document.getElementById('notepad').value = savedNote;
+        }
+    };
+</script>
 
 @endsection

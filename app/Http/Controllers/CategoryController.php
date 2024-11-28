@@ -118,4 +118,12 @@ public function __construct(){
         Category::destroy($id);
         return redirect('category/show')->with('flash_message', 'category deleted!');
     }
+    public function showAdminDashboard()
+{
+    $categories = Category::all(); // Fetch all categories from the database
+    $categoryCount = $categories->count(); // Count the number of categories
+
+    return view('admindashboard.index', compact('index', 'categoryCount'));
+}
+
 }

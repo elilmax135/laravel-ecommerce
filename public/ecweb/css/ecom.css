@@ -173,3 +173,81 @@ color: rgba(255,255,255,0.95);
     align-items: center;
     justify-content: center;
 }
+.back-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffb006; /* Blue background */
+    color: white; /* Text color */
+    font-size: 1rem;
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+}
+
+.back-btn:hover {
+    background-color: #ecfd00; /* Darker blue on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
+
+.back-btn:focus {
+    outline: none; /* Remove focus outline */
+}
+
+.back-btn i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+/* Optional: Add media query for responsiveness */
+@media (max-width: 768px) {
+    .back-btn {
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+        font-size: 0.9rem;
+    }
+}
+.notepad-container {
+    display: flex;
+    flex-direction: column; /* Align items in a vertical column */
+    gap: 15px; /* Adds space between each element */
+    padding: 20px;
+    border: 1px solid #ddd; /* Optional: add border to the container */
+    border-radius: 8px; /* Optional: rounded corners */
+    background-color: #e3fc03; /* Optional: light background */
+}
+
+h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5rem;
+}
+
+.material-icons-outlined {
+    font-size: 2rem; /* Adjust icon size */
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+textarea {
+    width: 100%; /* Make the textarea take full width */
+    padding: 10px; /* Add padding inside the textarea */
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+    resize: vertical; /* Allow resizing vertically */
+}
+
+.back-btn {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background */
+    color: white; /* Text color */
+    font-size: 1rem;
+    border-radius: 5px; /* Rounded corners */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    align-self: flex-start; /* Align the button to the start */
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}

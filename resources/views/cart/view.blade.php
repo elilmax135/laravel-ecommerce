@@ -2,7 +2,11 @@
 
 <link rel="stylesheet"  href="{{asset('ecweb/cart/add-cart.css')}}">
 @section('content')
+   <!-- Back Button -->
+   <a href="{{ url()->previous() }}" class="back-btn">Back</a>
+</div>
 <div class="cart-container">
+
     <h1>Your Cart</h1>
     @if($cartItems->isEmpty())
         <p class="empty-cart-message">Your cart is empty.</p>
